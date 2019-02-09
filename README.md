@@ -1,4 +1,8 @@
-# HAI Server [![](https://travis-ci.org/sumn2u/hai-server.svg?branch=master)](https://travis-ci.org/sumn2u/hai-server) [![](https://badge.fury.io/js/hai-server.svg)](http://badge.fury.io/js/hai-server)
+# HAI Server [![GitHub issues](https://img.shields.io/github/issues/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/issues) [![GitHub forks](https://img.shields.io/github/forks/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/network) [![GitHub stars](https://img.shields.io/github/stars/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/stargazers) [![GitHub license](https://img.shields.io/github/license/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url/https/github.com/sumn2u/hai-server.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsumn2u%2Fhai-server)
+[![GitHub tag](https://img.shields.io/github/tag/sumn2u/hai-server.svg)](https://GitHub.com/sumn2u/hai-server/tags/)
+[![GitHub release](https://img.shields.io/github/release/sumn2u/hai-server.svg)](https://GitHub.com/sumn2u/hai-server/releases/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/sumn2u/hai-server/graphs/commit-activity)
+<a href="https://npmjs.com/package/money-cli"><img src="https://img.shields.io/npm/dt/hai-server.svg" alt="npm Downloads"></a> 
 
 
 <!-- tocstop -->
