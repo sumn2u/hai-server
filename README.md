@@ -2,6 +2,9 @@
 
 
 <!-- tocstop -->
+Inspired and Forked from [JSON Server](https://github.com/typicode/json-server)
+
+Get a full fake REST API with authorization.
 
 ## Getting started
 
@@ -409,29 +412,75 @@ server.use(router)
 server.listen(3000, () => {
   console.log('HAI Server is running')
 })
-```
+```  
 
 #### Access control example
+Create a file name `auth.json` similar like the one shown below. Provide your own `secretKey`, `expiresIn`, and collection of authenticated users. Here the `authenticatedURL` indicates the collection of URL's that needs authorization and `authenticationURL` is the URL to get accesstoken.
 
-```js
-const jsonServer = require('hai-server')
-const server = jsonServer.create()
-const router = jsonServer.router('db.json')
-const middlewares = jsonServer.defaults()
+```json
+{
+    "secretKey":"123456789",
+    "expiresIn": "1h",
+    "users": [
+        {
+          "id": 1,
+          "name": "bruno",
+          "email": "bruno@email.com",
+          "password": "bruno"
+        },
+        {
+          "id": 2,
+          "name": "techie",
+          "email": "techie@email.com",
+          "password": "techie"
+        },
+        {
+          "id": 3,
+          "name": "nilson",
+          "email": "nilson@email.com",
+          "password": "nilson"
+        }
+      ],
+    "authenticationURL":"/auth/login",
+    "authenticatedURL":["/users"]
 
-server.use(middlewares)
-server.use((req, res, next) => {
- if (isAuthorized(req)) { // add your authorization logic here
-   next() // continue to HAI Server router
- } else {
-   res.sendStatus(401)
- }
-})
-server.use(router)
-server.listen(3000, () => {
-  console.log('HAI Server is running')
-})
+}
 ```
+```
+hai-server --watch db.json --auth auth.json --port 3000
+```
+## How to login?
+
+You can login by sending a POST request to
+
+```
+POST http://localhost:3000/auth/login
+```
+with the following data 
+
+```
+{
+  "email": "nilson@email.com",
+  "password":"nilson"
+}
+```
+
+You should receive an access token with the following format 
+
+```
+{
+   "access_token": "<ACCESS_TOKEN>"
+}
+```
+
+
+You should send this authorization with any request to the protected endpoints
+
+```
+Authorization: Bearer <ACCESS_TOKEN>
+```
+
+
 #### Custom output example
 
 To modify responses, overwrite `router.render` method:
