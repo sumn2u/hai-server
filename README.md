@@ -355,7 +355,7 @@ $ npm install hai-server --save-dev
 
 ```js
 // server.js
-const jsonServer = require('hai-server')
+const jsonServer = require('hai-server').haijsServer
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
@@ -387,7 +387,7 @@ Please note also that `jsonServer.router()` can be used in existing Express proj
 Let's say you want a route that echoes query parameters and another one that set a timestamp on every resource created.
 
 ```js
-const jsonServer = require('hai-server')
+const jsonServer = require('hai-server').haijsServer
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
