@@ -34,7 +34,7 @@
     "lowdb": "^1.0.0",
     "method-override": "^3.0.0",
     "morgan": "^1.9.1",
-    "nanoid": "^2.0.0",
+    "nanoid": "^3.1.31",
     "object-assign": "^4.0.1",
     "please-upgrade-node": "^3.1.1",
     "pluralize": "^7.0.0",
