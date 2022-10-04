@@ -2,7 +2,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/sumn2u/hai-server.svg)](https://GitHub.com/sumn2u/hai-server/tags/)
 [![GitHub release](https://img.shields.io/github/release/sumn2u/hai-server.svg)](https://GitHub.com/sumn2u/hai-server/releases/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/sumn2u/hai-server/graphs/commit-activity)
-<a href="https://npmjs.com/package/money-cli"><img src="https://img.shields.io/npm/dt/hai-server.svg" alt="npm Downloads"></a> 
+<a href="https://npmjs.com/package/hai-server"><img src="https://img.shields.io/npm/dt/hai-server.svg" alt="npm Downloads"></a> 
 
 
 <!-- tocstop -->
