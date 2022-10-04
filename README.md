@@ -551,11 +551,6 @@ __`jsonServer.router([path|object])`__
 
 Returns HAI Server router.
 
-### Deployment
-
-
-## Links
-
 
 ## License
 
