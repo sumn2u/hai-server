@@ -10,6 +10,9 @@ Inspired and Forked from [JSON Server](https://github.com/typicode/json-server)
 
 Get a full fake REST API with authorization.
 
+## Authentication using HAI Server
+[![Authentication using HAI-Server](https://img.youtube.com/vi/gz9RRdVa-x8/0.jpg)](https://www.youtube.com/watch?v=gz9RRdVa-x8)
+
 ## Getting started
 
 Install HAI Server 
