@@ -1,6 +1,6 @@
 {
   "name": "hai-server",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Serves JSON files through REST routes with authentication.",
   "main": "./lib/server/index.js",
   "bin": "./lib/cli/bin.js",
@@ -14,7 +14,7 @@
     "start:webpack": "webpack -d --watch",
     "lint": "eslint . --ignore-path .gitignore",
     "fix": "npm run lint -- --fix",
-    "build": "babel src -d lib && webpack -p",
+    "build": "babel src -d lib && webpack --mode production",
     "toc": "markdown-toc -i README.md",
     "prepublishOnly": "npm run build && pkg-ok"
   },
