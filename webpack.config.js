@@ -1,9 +1,11 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const  { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: './src/front/index.js',
+  mode: 'production',
+  devtool: 'eval-source-map',
   module: {
     rules: [
       { test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader'] },
@@ -11,7 +13,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       favicon: 'src/front/favicon.ico',
       template: 'src/front/index.html'
