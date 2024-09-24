@@ -1,4 +1,5 @@
-# HAI Server [![GitHub issues](https://img.shields.io/github/issues/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/issues) [![GitHub forks](https://img.shields.io/github/forks/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/network) [![GitHub stars](https://img.shields.io/github/stars/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/stargazers) [![GitHub license](https://img.shields.io/github/license/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url/https/github.com/sumn2u/hai-server.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsumn2u%2Fhai-server)
+# HAI Server 
+[![GitHub issues](https://img.shields.io/github/issues/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/issues) [![GitHub forks](https://img.shields.io/github/forks/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/network) [![GitHub stars](https://img.shields.io/github/stars/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/stargazers) [![GitHub license](https://img.shields.io/github/license/sumn2u/hai-server.svg)](https://github.com/sumn2u/hai-server/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url/https/github.com/sumn2u/hai-server.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsumn2u%2Fhai-server)
 [![GitHub tag](https://img.shields.io/github/tag/sumn2u/hai-server.svg)](https://GitHub.com/sumn2u/hai-server/tags/)
 [![GitHub release](https://img.shields.io/github/release/sumn2u/hai-server.svg)](https://GitHub.com/sumn2u/hai-server/releases/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/sumn2u/hai-server/graphs/commit-activity)
@@ -10,8 +11,9 @@ Inspired and Forked from [JSON Server](https://github.com/typicode/json-server)
 
 Get a full fake REST API with authorization.
 
+
 ## Authentication using HAI Server
-[![Authentication using HAI-Server](https://img.youtube.com/vi/gz9RRdVa-x8/0.jpg)](https://www.youtube.com/watch?v=gz9RRdVa-x8)
+[![Authentication using HAI-Server](https://img.youtube.com/vi/R8DccIqyER4/0.jpg)](https://www.youtube.com/watch?v=R8DccIqyER4)
 
 ## Getting started
 
@@ -557,5 +559,5 @@ Returns HAI Server router.
 
 ## License
 
-MIT
+[MIT](./LICENSE)
 

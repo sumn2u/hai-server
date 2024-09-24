@@ -15,6 +15,7 @@
     "lint": "eslint . --ignore-path .gitignore",
     "fix": "npm run lint -- --fix",
     "build": "babel src -d lib && webpack --mode production",
+    "semantic-release": "semantic-release",
     "toc": "markdown-toc -i README.md",
     "prepublishOnly": "npm run build && pkg-ok"
   },
@@ -82,6 +83,7 @@
     "prettier": "^3.3.3",
     "promise-polyfill": "^8.3.0",
     "rimraf": "^6.0.1",
+    "semantic-release": "24.1.1",
     "server-ready": "^0.3.1",
     "supertest": "^7.0.0",
     "temp-write": "^6.0.0",
@@ -118,6 +120,10 @@
   "homepage": "https://github.com/sumn2u/hai-server",
   "engines": {
     "node": ">=6"
+  },
+  "files": ["dist", "README.md"],
+  "publishConfig": {
+    "access": "public"
   },
   "husky": {
     "hooks": {
