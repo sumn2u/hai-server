@@ -462,12 +462,12 @@ hai-server --watch db.json --auth auth.json --port 3000
 
 You can login by sending a POST request to
 
-```
+```json
 POST http://localhost:3000/auth/login
 ```
 with the following data 
 
-```
+```json
 {
   "email": "nilson@email.com",
   "password":"nilson"
@@ -476,7 +476,7 @@ with the following data
 
 You should receive an access token with the following format 
 
-```
+```json
 {
    "access_token": "<ACCESS_TOKEN>"
 }
@@ -485,7 +485,7 @@ You should receive an access token with the following format
 
 You should send this authorization with any request to the protected endpoints
 
-```
+```json
 Authorization: Bearer <ACCESS_TOKEN>
 ```
 
@@ -545,12 +545,14 @@ __`jsonServer.defaults([options])`__
 
 Returns middlewares used by HAI Server.
 
-* options
-  * `static` path to static files
-  * `logger` enable logger middleware (default: true)
-  * `bodyParser` enable body-parser middleware (default: true)
-  * `noCors` disable CORS (default: false)
-  * `readOnly` accept only GET requests (default: false)
+| Option      | Description                                    | Default   |
+|-------------|------------------------------------------------|-----------|
+| `static`    | Path to static files                           | -         |
+| `logger`    | Enable logger middleware                       | `true`    |
+| `bodyParser`| Enable body-parser middleware                  | `true`    |
+| `noCors`    | Disable CORS                                  | `false`   |
+| `readOnly`  | Accept only GET requests                       | `false`   |
+
 
 __`jsonServer.router([path|object])`__
 
