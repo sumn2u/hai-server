@@ -1,6 +1,6 @@
 {
   "name": "hai-server",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Serves JSON files through REST routes with authentication.",
   "main": "./lib/server/index.js",
   "bin": "./lib/cli/bin.js",
@@ -10,8 +10,8 @@
   "scripts": {
     "test": "npm run build && cross-env NODE_ENV=test jest && npm run lint",
     "start": "run-p start:**",
-    "start:babel-node": "babel-node src/cli/bin db.json -r routes.json",
-    "start:webpack": "webpack -d --watch",
+    "start:babel-node": "babel-node src/cli/bin db.json -r ./routes.json",
+    "start:webpack": "webpack --watch",
     "lint": "eslint . --ignore-path .gitignore",
     "fix": "npm run lint -- --fix",
     "build": "babel src -d lib && webpack --mode production",
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "body-parser": "^1.20.3",
-    "chalk": "^5.3.0",
+    "chalk": "^2.4.1",
     "compression": "^1.7.4",
     "connect-pause": "^0.1.1",
     "cors": "^2.8.5",
@@ -32,16 +32,16 @@
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "lodash-id": "^0.14.1",
-    "lowdb": "^7.0.1",
+    "lowdb": "^1.0.0",
     "method-override": "^3.0.0",
     "morgan": "^1.10.0",
-    "nanoid": "^5.0.7",
+    "nanoid": "^2.0.0",
     "object-assign": "^4.1.1",
     "please-upgrade-node": "^3.2.0",
     "pluralize": "^8.0.0",
     "request": "^2.88.2",
     "server-destroy": "^1.0.1",
-    "update-notifier": "^7.3.1",
+    "update-notifier": "^2.5.0",
     "yargs": "^17.7.2"
   },
   "devDependencies": {
@@ -62,7 +62,7 @@
     "cross-env": "^7.0.3",
     "css-loader": "^7.1.2",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-config-standard-preact": "^1.1.6",
+    "eslint-config-standard-preact": "^0.9.1",
     "eslint-plugin-import": "^2.30.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -120,7 +120,10 @@
   "engines": {
     "node": ">=6"
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "publishConfig": {
     "access": "public"
   },
